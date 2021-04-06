@@ -12,4 +12,9 @@ func new --name CustomerGetAll --template "HTTP trigger" --authlevel "anonymous"
 func new --name CustomerCreate --template "HTTP trigger" --authlevel "anonymous"
 ```
 
-3. 
+3. Agregar dependencias
+```script
+npm install @azure/cosmos
+```
+
+
