@@ -6,13 +6,13 @@
 func init CustomerService --javascript
 ```
 
-2. Crear functions CustomerGetAll / CustomerCreate
+1. Crear functions CustomerGetAll / CustomerCreate
 ```script
 func new --name CustomerGetAll --template "HTTP trigger" --authlevel "anonymous"
 func new --name CustomerCreate --template "HTTP trigger" --authlevel "anonymous"
 ```
 
-3. Agregar dependencias para pruebas
+1. Agregar dependencias para pruebas
 ```script
 npm install sinon --save-dev 
 npm install mocha --save-dev
@@ -23,7 +23,7 @@ npm install rewire  --save-dev
 npm install cross-env --save-dev 
 ```
 
-3. Ejecutar pruebas
+1. Ejecutar pruebas
 ```script
 cd ./CustomerService
 npm install sinon --save-dev 
