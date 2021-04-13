@@ -1,5 +1,4 @@
-# CI/CD - Azure function
-
+# Unit test - Azure function
 
 1. Crear proyecto 
     ```script
@@ -28,9 +27,13 @@
     cd ./CustomerService
     npm test
     ```
+    Unit test result
+    ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 1. Generar reporte coverage
     ```script
     cd ./CustomerService
     npm run coverage
     ```
+    Coverage report
+    ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
