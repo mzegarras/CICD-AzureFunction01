@@ -25,6 +25,9 @@ local.settings.json
 node_modules
 dist
 
+.nyc_output/
+.vscode/
+
 # Local python packages
 .python_packages/
 

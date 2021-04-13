@@ -2,8 +2,18 @@
   "name": "",
   "version": "",
   "description": "",
-  "scripts" : {
-    "test": "echo \"No tests yet...\""
+  "scripts": {
+    "test": "cross-env NODE_ENV=development  mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
+    "coverage": "cross-env NODE_ENV=development  nyc --reporter=text npm test"
   },
-  "author": ""
+  "author": "",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "rewire": "^5.0.0",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.6.0"
+  }
 }
