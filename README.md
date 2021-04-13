@@ -22,6 +22,45 @@
     npm install cross-env --save-dev 
     ```
 
+1. Agregar los expect
+    ```nodejs
+    context('get',()=>{
+
+        it('should get customer by name',async()=>{
+            //preparar data
+
+            //preparar mocks,stub,spy
+
+            //invocar funcionalidad
+            await httpFunction(contextFunctions, request);
+
+            expect(contextFunctions.log.callCount).to.equal(1);
+
+            //validar respuesta
+            expect(contextFunctions.res.status).to.equal(200);
+
+            expect(contextFunctions.res)
+                .to.have.property('body')
+                .to.be.a('Object');
+
+            expect(contextFunctions.res.body)
+                .to.have.property('message')
+                .to.be.a('String')
+                .to.equal('fake_string');
+            
+            expect(contextFunctions.res)
+                .to.have.property('headers');
+
+            expect(contextFunctions.res.headers)
+                .to.include({ 'Content-Type':'application/json'});
+
+            //validar comportamiento
+            expect(FakeUserServiceClass).to.have.been.calledWithNew;
+            expect(convertMessageStub).to.have.been.calledWith("Hello, Bill.")
+
+        });
+    ```
+
 1. Ejecutar pruebas
     ```script
     cd ./CustomerService
