@@ -22,7 +22,7 @@
     npm install cross-env --save-dev 
     ```
 
-1. Agregar los expect
+1. Agregar expect
     ```javascript
     context('get',()=>{
 
