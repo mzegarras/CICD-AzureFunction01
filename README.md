@@ -28,7 +28,7 @@
     npm test
     ```
     Unit test result
-    ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+    ![Image of Yaktocat]((./CustomerService/media/test.png))
 
 1. Generar reporte coverage
     ```script
@@ -36,4 +36,4 @@
     npm run coverage
     ```
     Coverage report
-    ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+    ![Image of Yaktocat]((./CustomerService/media/coverage.png))
