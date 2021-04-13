@@ -23,7 +23,7 @@
     ```
 
 1. Agregar los expect
-    ```nodejs
+    ```javascript
     context('get',()=>{
 
         it('should get customer by name',async()=>{
@@ -57,7 +57,6 @@
             //validar comportamiento
             expect(FakeUserServiceClass).to.have.been.calledWithNew;
             expect(convertMessageStub).to.have.been.calledWith("Hello, Bill.")
-
         });
     ```
 
