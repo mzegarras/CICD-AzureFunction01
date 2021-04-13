@@ -28,7 +28,7 @@
     npm test
     ```
     Unit test result
-    ![Image of Yaktocat](CustomerService/media/test.png)
+    ![Unit test result](CustomerService/media/test.png =100x100)
 
 1. Generar reporte coverage
     ```script
@@ -36,4 +36,4 @@
     npm run coverage
     ```
     Coverage report
-    ![Image of Yaktocat](CustomerService/media/coverage.png)
+    ![Coverage report](CustomerService/media/coverage.png)
